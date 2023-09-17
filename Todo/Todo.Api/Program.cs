@@ -16,13 +16,13 @@ builder.Services.AddTransient<TodoHandler, TodoHandler>();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 	.AddJwtBearer(opt =>
 	{
-		opt.Authority = "https://securetoken.google.com/rstodo-8ff79";
+		opt.Authority = "https://securetoken.google.com/rstodo-ffd13";
 		opt.TokenValidationParameters = new TokenValidationParameters
 		{
 			ValidateIssuer = true,
-			ValidIssuer = "https://securetoken.google.com/rstodo-8ff79",
+			ValidIssuer = "https://securetoken.google.com/rstodo-ffd13",
 			ValidateAudience = true,
-			ValidAudience = "rstodo-8ff79",
+			ValidAudience = "rstodo-ffd13",
 			ValidateLifetime = true
 		};
 	});
