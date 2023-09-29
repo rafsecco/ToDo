@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Todo.Domain.Commands;
 using Todo.Domain.Entities;
@@ -8,7 +9,7 @@ namespace Todo.Api.Controllers;
 
 [ApiController]
 [Route("v1/todos")]
-//[Authorize]
+[Authorize]
 public class TodoController : ControllerBase
 {
 	#region HttpGet

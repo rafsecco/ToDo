@@ -21,6 +21,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 
+
 @NgModule({
 	declarations: [
 		AppComponent,
@@ -41,7 +42,7 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 		AppRoutingModule,
 		HttpClientModule,
 		ReactiveFormsModule,
-		AngularFireModule.initializeApp(environment.firebase),
+		AngularFireModule.initializeApp(environment.firebaseConfig),
 		AngularFireAuthModule,
 	],
 	providers: [],

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
-import { DataService } from 'src/app/data.service';
+import { DataService } from 'src/app/shared/services/data.service';
 
 @Component({
 	selector: 'app-tomorrow',
